@@ -1,6 +1,6 @@
 file_format: "1"
 id: cncremote
-name: Knob Goblin
+name: CNC Remote
 type: shield
 url: https://knob-goblin.com/
 requires: [pro_micro]

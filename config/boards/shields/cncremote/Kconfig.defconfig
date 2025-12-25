@@ -4,7 +4,7 @@
 if SHIELD_cncremote
 
 config ZMK_KEYBOARD_NAME
-  default "Knob Goblin"
+  default "CNC Remote"
 
 if ZMK_DISPLAY
 
