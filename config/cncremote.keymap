@@ -19,15 +19,6 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
-        my_macro: my_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <1>; 
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp F14
-                , <&macro_release &kp LCTRL>
-                ;
-        };
     };
 };
 
@@ -41,7 +32,7 @@
     &kp F13          &kp F14         &kp F15         &kp F16         &kp F17
     &kp F18          &kp F19         &kp F20         &kp F21         &kp F22
     &kp F23          &kp F24         &kp PAGE_UP     &kp PAGE_DOWN   &kp UP_ARROW
-    &zed_em_kay      &my_macro       &kp F15         &kp F15         &kp F15
+    &zed_em_kay      &kp F19         &kp F15         &kp F15         &kp F15
     &kp DOWN_ARROW   &mo 1           &kp LEFT_ARROW  &kp RIGHT_ARROW &kp KP_ENTER
             >;
 
