@@ -22,7 +22,7 @@
 		
         my_macro1: my_macro1 {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <1>; // Must be 1
+            #binding-cells = <0>; 
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp F14
@@ -32,7 +32,7 @@
 
         my_macro2: my_macro2 {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <2>; // Must be 1
+            #binding-cells = <0>; 
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp F15
@@ -42,16 +42,17 @@
 
         my_macro3: my_macro3 {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <3>; // Must be 1
+            #binding-cells = <0>; 
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp F16
                 , <&macro_release &kp LCTRL>
                 ;
         };
+		
         my_macro4: my_macro4 {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <4>; // Must be 1
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp F17
