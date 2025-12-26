@@ -18,6 +18,7 @@
                 , <&macro_tap &kp F13
                 , <&macro_release &kp LCTRL>
                 ;
+        };
         my_macro1: my_macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; 
