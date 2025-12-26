@@ -16,11 +16,11 @@
             display-name = "Default Layer";
 
             bindings = <
-    &trans           &kp F13         &kp F14         &kp F15         &kp F16
-    &trans           &kp F17         &kp F18         &kp F19         &kp F20
-    &trans           &kp F21         &kp F22         &kp F23         &kp F24
-    &kp PAGE_UP      &kp PAGE_DOWN   &kp UP_ARROW    &kp DOWN_ARROW  &kp LEFT_ARROW
-    &kp RIGHT_ARROW  &mo 1           &kp KP_NUMBER_0 &kp KP_DOT      &kp KP_ENTER
+    &kp F13          &kp F14         &kp F15         &kp F16         &kp F17
+    &kp F18          &kp F19         &kp F20         &kp F21         &kp F22
+    &kp F23          &kp F24         &kp PAGE_UP     &kp PAGE_DOWN   &kp UP_ARROW
+    &kp DOWN_ARROW   &kp LEFT_ARROW  &kp RIGHT_ARROW &kp LCTRL       &kp RCTRL
+    &kp LEFT_ALT     &mo 1           &kp KP_NUMBER_0 &kp RIGHT_ALT   &kp KP_ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -32,7 +32,7 @@
     &trans   &bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2
     &trans   &kp HOME        &trans         &kp PAGE_UP      &trans
     &trans   &kp END         &kp UP_ARROW   &kp PAGE_DOWN    &trans
-    &trans   &kp LEFT_ARROW  &kp DOWN_ARROW &kp RIGHT_ARROW  &kp SPACE
+    &trans   &kp LEFT_ARROW  &kp DOWN_ARROW &kp RIGHT_ARROW  &kp 
     &trans   &trans          &kp BACKSPACE  &kp DELETE       &trans
             >;
 
