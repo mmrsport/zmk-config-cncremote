@@ -14,9 +14,48 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp F13
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+		
+        my_macro1: my_macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <1>; // Must be 1
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp F14
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        my_macro2: my_macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <2>; // Must be 1
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp F15
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        my_macro3: my_macro3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <3>; // Must be 1
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp F16
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+        my_macro4: my_macro4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <4>; // Must be 1
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp F17
+                , <&macro_release &kp LCTRL>
                 ;
         };
     };
@@ -32,7 +71,7 @@
     &kp F13          &kp F14         &kp F15         &kp F16         &kp F17
     &kp F18          &kp F19         &kp F20         &kp F21         &kp F22
     &kp F23          &kp F24         &kp PAGE_UP     &kp PAGE_DOWN   &kp UP_ARROW
-    &zed_em_kay      &kp F14         &kp F15         &kp F16         &kp F17
+    &zed_em_kay      &my_macro1      &my_macro2      &my_macro3      &my_macro4
     &kp DOWN_ARROW   &mo 1           &kp LEFT_ARROW  &kp RIGHT_ARROW &kp KP_ENTER
             >;
 
