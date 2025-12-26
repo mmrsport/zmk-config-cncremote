@@ -9,6 +9,18 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <4>;
+            tapping-term-ms = <225>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -19,8 +31,8 @@
     &kp F13          &kp F14         &kp F15         &kp F16         &kp F17
     &kp F18          &kp F19         &kp F20         &kp F21         &kp F22
     &kp F23          &kp F24         &kp PAGE_UP     &kp PAGE_DOWN   &kp UP_ARROW
-    &kp DOWN_ARROW   &kp LEFT_ARROW  &kp RIGHT_ARROW &kp LCTRL       &kp RCTRL
-    &kp LEFT_ALT     &mo 1           &kp KP_NUMBER_0 &kp RIGHT_ALT   &kp KP_ENTER
+    &hm LCTRL F13    &hm LCTRL F14   &hm LCTRL F15   &hm LCTRL F16   &hm LCTRL F17
+    &kp DOWN_ARROW   &mo 1           &kp LEFT_ARROW  &kp RIGHT_ARROW &kp KP_ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
