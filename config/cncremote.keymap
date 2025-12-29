@@ -15,7 +15,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp KP_PLUS>
-                , <&sleep-ms 20>
+                , <&macro_tap_time 20>
                 , <&macro_release &kp KP_PLUS>
                 ;
         };
