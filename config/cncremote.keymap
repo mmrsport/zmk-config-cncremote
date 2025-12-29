@@ -10,50 +10,65 @@
 
 / {
     macros {
-        zed_em_kay: zed_em_kay {
+        lctrlf13: lctrlf13 {
             compatible = "zmk,behavior-macro";
+			label = "LCTRL_F13";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp F13>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings = <
+			    &macro_press   &kp LCTRL
+                &macro_wait    10
+				&kp F13
+				&macro_wait    10
+                &macro_release &kp LCTRL
+			>;
         };
-        my_macro: my_macro {
+        lctrlf14: lctrlf14 {
             compatible = "zmk,behavior-macro";
+			label = "LCTRL_F14";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp F14>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings = <
+			    &macro_press   &kp LCTRL
+                &macro_wait    10
+				&kp F14
+				&macro_wait    10
+                &macro_release &kp LCTRL
+			>;
         };
-        my_macro1: my_macro1 {
+        lctrlf15: lctrlf15 {
             compatible = "zmk,behavior-macro";
+			label = "LCTRL_F15";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp F15>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings = <
+			    &macro_press   &kp LCTRL
+                &macro_wait    10
+				&kp F15
+				&macro_wait    10
+                &macro_release &kp LCTRL
+			>;
         };
-        my_macro2: my_macro2 {
+        lctrlf16: lctrlf16 {
             compatible = "zmk,behavior-macro";
+			label = "LCTRL_F16";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp F16>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings = <
+			    &macro_press   &kp LCTRL
+                &macro_wait    10
+				&kp F16
+				&macro_wait    10
+                &macro_release &kp LCTRL
+			>;
         };
-        my_macro3: my_macro3 {
+        lctrlf17: lctrlf17 {
             compatible = "zmk,behavior-macro";
+			label = "LCTRL_F17";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp F17>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings = <
+			    &macro_press   &kp LCTRL
+                &macro_wait    10
+				&kp F17
+				&macro_wait    10
+                &macro_release &kp LCTRL
+			>;
         };
     };
 };
@@ -65,7 +80,7 @@
         default_layer {
 
             bindings = <
-    &zed_em_kay      &kp F14         &kp F15         &kp F16         &my_macro3
+    &lctrlf13        &lctrlf14       &lctrlf15       &lctrlf16       &lctrlf17
     &kp F13          &kp F14         &kp F15         &kp F16         &kp F17
     &kp F18          &kp F19         &kp F20         &kp F21         &kp F22
     &kp F23          &kp F24         &kp PAGE_UP     &kp PAGE_DOWN   &kp UP_ARROW
