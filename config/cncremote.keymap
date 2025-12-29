@@ -15,9 +15,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
-				, <&macro_wait_time 50>
+				, <&macro_wait_time 100>
                 , <&macro_tap &kp F13>
-				, <&macro_wait_time 50>
+				, <&macro_wait_time 100>
                 , <&macro_release &kp LSHFT>
                 ;
         };
@@ -26,9 +26,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
-				, <&macro_wait_time 50>
+				, <&macro_wait_time 100>
                 , <&macro_tap &kp F14>
-				, <&macro_wait_time 50>
+				, <&macro_wait_time 100>
                 , <&macro_release &kp LSHFT>
                 ;
         };
