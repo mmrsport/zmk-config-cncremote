@@ -9,42 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    macros {
-        ctrlF13: ctrlF13 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-				, <&macro_wait_time 30>
-                , <&macro_tap &kp F13>
-				, <&macro_wait_time 30>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-        ctrlF14: ctrlF14 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-				, <&macro_wait_time 30>
-                , <&macro_tap &kp F14>
-				, <&macro_wait_time 30>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-    };
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
 
             bindings = <
-    &ctrlF13         &ctrlF14        &kp KP_N3       &kp KP_N4       &kp LCTRL
     &kp F13          &kp F14         &kp F15         &kp F16         &kp F17
     &kp F18          &kp F19         &kp F20         &kp F21         &kp F22
+	&kp KP_PLUS      &kp KP_MINUS    &kp KP_MULTIPLY &kp KP_DIVIDE   &kp KP_EQUAL
     &kp F23          &kp F24         &kp PAGE_UP     &kp PAGE_DOWN   &kp UP_ARROW
     &kp DOWN_ARROW   &kp LEFT_ARROW  &kp RIGHT_ARROW &mo 1           &bt BT_CLR
             >;
